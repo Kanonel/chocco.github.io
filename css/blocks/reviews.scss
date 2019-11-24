@@ -2,7 +2,7 @@
     position: relative;
 
     &:after {
-        content: url('../../img/reviews/berry.png');
+        content: url('../img/reviews/berry.png');
         top: 76%;
         position: absolute;
     }
@@ -14,7 +14,7 @@
     position: relative;
     display: flex; 
     flex-direction: column;  
-    background-image: url('../../img/reviews/strawberry.png'); 
+    background-image: url('../img/reviews/strawberry.png'); 
     background-repeat: no-repeat; 
     background-position: right 36px;
 }
@@ -36,13 +36,13 @@
     margin-left: 80px;
     background-color: $light_grey;
     margin-bottom: 27px;
-    background-image: url('../../img/reviews/flower.png'); 
+    background-image: url('../img/reviews/flower.png'); 
     background-repeat: no-repeat; 
     background-position: right top;
     position: relative;
 
     &:after {
-        content: url('../../img/reviews/ellips.png');
+        content: url('../img/reviews/ellips.png');
         left: 45%;
         position: absolute;
     }

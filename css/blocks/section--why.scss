@@ -2,14 +2,14 @@
     position: relative;
 
     &:before {
-        content: url('../../img/chocco/blackberry.png');
+        content: url('../img/chocco/blackberry.png');
         bottom: 93%;
         right: 19%;
         position: absolute;
     }
 
     &:after {
-        content: url('../../img/reviews/chocco.png');
+        content: url('../img/reviews/chocco.png');
         top: 71%;
         position: absolute;
     }
@@ -23,7 +23,7 @@
     flex-direction: column;
     
     &:before {
-        content: url('../../img/chocco/list.png');
+        content: url('../img/chocco/list.png');
         bottom: 90%;
         left: 3%;
         position: absolute;
