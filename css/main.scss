@@ -1,0 +1,35 @@
+// color
+$black: #000000;
+$white: #fff;
+$ocean: #0f5a47;
+$grey: #666666;
+$dark_grey: #323232;
+$light_grey: #f8faf9;
+$whitetwo: #f2f5f4;
+
+//fonts
+@font-face {
+    font-family: Museo Sans Cyrl;     
+    src: url(../fonts/MuseoSans/MuseoSansCyrl-500.woff);
+    src: url(../fonts/MuseoSans/MuseoSansCyrl-500.woff2);
+}
+
+// setups
+@import "./layout/normalize.scss";
+@import "./layout/layout.scss";
+
+// blocks
+@import "./blocks/header.scss";
+@import "./blocks/sidebar.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/page-content.scss";
+@import "./blocks/about.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/information.scss";
+@import "./blocks/image_chocco.scss";
+@import "./blocks/fixed-menu.scss";
+@import "./blocks/desc.scss";
+@import "./blocks/section--why.scss";
+@import "./blocks/describe.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/people.scss";

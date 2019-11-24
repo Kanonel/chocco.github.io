@@ -1,0 +1,30 @@
+.people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+}
+
+.people__item {
+    margin-right: 11px;
+}
+
+.people__img {
+    max-width: 68px;
+    max-height: 68px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.people__item--active {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $ocean;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

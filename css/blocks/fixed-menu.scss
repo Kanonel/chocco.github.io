@@ -1,0 +1,36 @@
+.fixed-menu {
+    position: fixed;
+    top: 211px;
+    right: 46px;
+    z-index: 1;
+}
+
+.fixed-menu__dot {
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    position: relative;
+    margin-bottom: 15px;
+
+    &--active {
+        border-color: $white;
+    }
+
+    &:hover {
+        border-color: $white;
+    }
+
+    &:before {
+        content: '';
+        height: 6px;
+        width: 6px;
+        background-color: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

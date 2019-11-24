@@ -1,0 +1,67 @@
+.describe {
+    width: 1100px;
+    padding-left: 80px;
+}
+
+.describe__list {
+    display: flex;
+    justify-content: center;
+}
+
+.describe__item {
+    width: 249px;
+    margin-right: 81px;
+    margin-bottom: 121px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &:after {
+        content: url('../../img/why/dods.png');
+        left: 104%;
+        top: 19%;
+        position: absolute;
+    }
+
+    &:last-child:after {
+        content: "";
+        }
+}
+
+.describe__item:last-child {
+    margin-right: 0;
+}
+
+
+.describe__pic {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: $whitetwo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.describe__desk {
+    text-align: center;
+    margin: auto;
+}
+
+.describe-title {
+    color: $black;
+    font-family: "Alegreya Sans";
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.describe__text-paragraph {
+    color: $grey;
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    font-weight: 300;
+}

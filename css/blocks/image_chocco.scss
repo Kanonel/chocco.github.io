@@ -1,0 +1,17 @@
+.image--chocco__container {
+    padding: 55px 28px 36px 19px;
+}
+
+.image--chocco__pic {
+    width: 514px;
+    height: 557px;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.pic {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}

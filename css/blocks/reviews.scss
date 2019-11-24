@@ -1,0 +1,95 @@
+.section--reviews {
+    position: relative;
+
+    &:after {
+        content: url('../../img/reviews/berry.png');
+        top: 76%;
+        position: absolute;
+    }
+}
+
+.section--reviews__container {
+    margin: 0 auto;  
+    width: 1100px;
+    position: relative;
+    display: flex; 
+    flex-direction: column;  
+    background-image: url('../../img/reviews/strawberry.png'); 
+    background-repeat: no-repeat; 
+    background-position: right 36px;
+}
+
+.reviews__title {
+    color: $black;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 69px;
+    margin-bottom: 44px;
+}
+
+.reviews {
+    display: flex;
+    width: 940px;
+    margin-left: 80px;
+    background-color: $light_grey;
+    margin-bottom: 27px;
+    background-image: url('../../img/reviews/flower.png'); 
+    background-repeat: no-repeat; 
+    background-position: right top;
+    position: relative;
+
+    &:after {
+        content: url('../../img/reviews/ellips.png');
+        left: 45%;
+        position: absolute;
+    }
+}
+
+.reviews__block {
+    display: flex;
+    width: 707px;
+    margin: 51px 188px 34px 45px;
+}
+
+.reviews__img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reviews__picture {
+    max-width: 254px;
+    max-height: 254px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.reviews__desk {
+    width: 433px;
+    display: block;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    color: $grey;
+    padding-top: 18px;
+}
+
+.reviews__about {
+    font-size: 30px;
+    color: $dark_grey;
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+.reviews__text-paragraph {
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+.reviews__name {
+    font-weight: 500;
+}

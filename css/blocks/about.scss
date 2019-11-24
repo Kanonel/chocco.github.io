@@ -1,0 +1,25 @@
+.about {
+    width: 404px;
+}
+
+.about__title {
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.about__text-paragraph {
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+
+.about__btn {
+    margin-bottom: 94px;
+}

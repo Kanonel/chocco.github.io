@@ -1,0 +1,22 @@
+.header__container {
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-left: 79px;
+    padding-right: 79px;
+    width: 1100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: $white;
+    font-family: "Museo Sans Cyrl";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+
