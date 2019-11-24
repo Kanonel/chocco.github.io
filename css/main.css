@@ -377,14 +377,14 @@ h6 {
 
 .section--welcome__container {
   background-color: #61c4d9;
-  background-image: url("../../img/chocco/herb.png");
+  background-image: url(../../img/chocco/herb.png);
   background-repeat: no-repeat;
   background-size: 43% 100%;
   background-position: right 0px; }
 
 .section--why-chocco {
   background-color: #fff;
-  background-image: url("../../img/why/list.png");
+  background-image: url(../../img/why/list.png);
   background-repeat: no-repeat;
   background-position: 0px; }
 
