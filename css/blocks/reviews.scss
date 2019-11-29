@@ -16,7 +16,7 @@
     flex-direction: column;  
     background-image: url('../img/reviews/strawberry.png'); 
     background-repeat: no-repeat; 
-    background-position: right 36px;
+    background-position: right 2.25rem;
 }
 
 .reviews__title {
@@ -26,16 +26,16 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 69px;
-    margin-bottom: 44px;
+    margin-top: 4.3425rem;
+    margin-bottom: 2.75rem;
 }
 
 .reviews {
     display: flex;
-    width: 940px;
-    margin-left: 80px;
+    width: 58.75rem;
+    margin-left: 5rem;
     background-color: $light_grey;
-    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
     background-image: url('../img/reviews/flower.png'); 
     background-repeat: no-repeat; 
     background-position: right top;
@@ -50,8 +50,8 @@
 
 .reviews__block {
     display: flex;
-    width: 707px;
-    margin: 51px 188px 34px 45px;
+    width: 44.1875rem;
+    margin: 3.1875rem 11.75rem 2.125rem 2.8125rem;
 }
 
 .reviews__img {
@@ -62,32 +62,32 @@
 }
 
 .reviews__picture {
-    max-width: 254px;
-    max-height: 254px;
+    max-width: 15.875rem;
+    max-height: 15.875rem;
     overflow: hidden;
     flex: 0 0 auto;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .reviews__desk {
-    width: 433px;
+    width: 27.0625rem;
     display: block;
     font-family: "Alegreya Sans";
     font-size: 18px;
     color: $grey;
-    padding-top: 18px;
+    padding-top: 1.125rem;
 }
 
 .reviews__about {
     font-size: 30px;
     color: $dark_grey;
     font-weight: 500;
-    margin-bottom: 29px;
+    margin-bottom: 1.8125rem;
 }
 
 .reviews__text-paragraph {
     font-weight: 400;
-    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
 }
 
 .reviews__name {

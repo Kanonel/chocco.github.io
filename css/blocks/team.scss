@@ -1,0 +1,113 @@
+.section__team {
+    position: relative;
+
+    &:before {
+        content: url('../img/team/blueberry.png');
+        bottom: 50%;
+        right: 0;
+        position: absolute;
+    }
+
+    &:after {
+        content: url('../img/team/raspberry.png');
+        top: 90%;
+        left: 8%;
+        position: absolute;
+    }
+}
+
+.section__team--container {
+    margin: 0 auto;  
+    width: 1100px;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+}
+
+.team__title {
+    font-family: "Alegreya Sans";
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black;
+    margin-top: 4.5625rem;
+    margin-bottom: 3.625rem;
+}
+
+.accordeon-team__list {
+    display: flex;
+    justify-content: center;
+}
+
+.accordeon-team__item {
+    margin-right: 1.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    &--active,
+    &:hover {
+        .accordeon-team__content {
+            max-height: 4.75rem;
+        } 
+        .accordeon-team__btn--name {
+            &:after {
+                content: url('../img/team/up.png');
+                margin-left: 2%;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.accordeon-team__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .3s;
+}
+
+.accordeon-team__people {
+    width: 13.75rem;
+}
+
+.accordeon-team__img {
+    width: 13.75rem;
+    height: 18rem;
+    margin-bottom: 1.625rem;
+}
+
+.accordeon-team__btn {
+    text-decoration: none;
+}
+
+.accordeon-team__btn--name {
+    font-family: "Alegreya Sans";
+    font-size: 21px;
+    font-weight: 500;
+    color: $dark_grey;
+    margin-bottom: 0.8125rem;
+
+    &:after {
+        content: url('../img/team/down.png');
+        margin-left: 2%;
+        position: absolute;
+    }
+}
+
+.profession {
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: $otherblack;
+    margin-bottom: 0.75rem;
+}
+
+.accordeon-team__text {
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 300;
+    color: $grey;
+}

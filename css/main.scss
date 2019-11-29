@@ -6,6 +6,7 @@ $grey: #666666;
 $dark_grey: #323232;
 $light_grey: #f8faf9;
 $whitetwo: #f2f5f4;
+$otherblack: #281e1e;
 
 //fonts
 @font-face {
@@ -33,3 +34,5 @@ $whitetwo: #f2f5f4;
 @import "./blocks/describe.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/people.scss";
+@import "./blocks/team.scss";
+@import "./blocks/menu.scss";

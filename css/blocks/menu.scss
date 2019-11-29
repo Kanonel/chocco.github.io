@@ -1,0 +1,89 @@
+.section__menu {
+    background-color: $black;
+    background-image: url(../img/menu/fon.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.section__menu--container {
+    margin: 0 auto;  
+    width: 1100px;
+    min-height: 650px;
+    position: relative;
+    display: flex; 
+}
+
+.menu__title {
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 6.1875rem;
+    margin-left: 4.9375rem;
+}
+
+.accordeon-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.accordeon-menu__list {
+    display: flex;
+}
+
+.accordeon-menu__item {
+    display: flex;
+
+    &--active,
+    &:hover {
+        .accordeon-menu__content {
+            max-width: 33.125rem;
+        }      
+    }
+}
+
+.accordeon-menu__content {
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width .3s;
+    background-color: rgba($color: #000000, $alpha: .6);
+}
+
+.accordeon-menu__text {
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.97px;   
+    padding-top: 3.125rem;
+    padding-right: 7.9375rem;
+    padding-left: 1.6875rem;
+}
+
+.accordeon-menu__btn {
+    position: relative;
+    width: 6.25rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba($color: #000000, $alpha: .9);
+}
+
+.accordeon-menu__btn--position {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -43%;
+    transform: rotate(-90deg) translateY(-50%);
+    text-decoration: none;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 500;
+    color: $white;
+    transform-origin: 0 0;
+    white-space: nowrap;
+}

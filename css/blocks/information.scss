@@ -1,14 +1,14 @@
 .information {
-    width: 465px;
+    width: 29.0625rem;
 }
 
 .information__list {
     display: flex;
-    padding-bottom: 47px;
+    padding-bottom: 2.9375rem;
 }
 
 .information__item {
-    margin-right: 47px;
+    margin-right: 2.9375rem;
     display: flex;
 }
 
@@ -24,9 +24,9 @@
 }
 
 .information__pic {
-    margin-right: 9px;
-    max-width: 50px;
-    max-height: 42px;
+    margin-right: 0.5625rem;
+    max-width: 3.125rem;
+    max-height: 2.625rem;
     overflow: hidden;
     flex: 0 0 auto;
 }
