@@ -1,0 +1,122 @@
+.reviews {
+    position: relative;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.reviews__container {
+    padding-top: 4.3125rem;
+    position: relative;  
+    background-image: url('../img/reviews/strawberry.png'); 
+    background-repeat: no-repeat; 
+    background-position: right 2.25rem;
+    @include phones {
+        padding-top: 2rem;   
+    }
+}
+
+.reviews__tit {
+    margin-bottom: 2.75rem;
+    @include phones {
+        margin-bottom: 1rem;   
+    }
+}
+
+.reviews__table {
+    display: flex;
+    width: 58.75rem;
+    margin-left: 5rem;
+    background-color: $light_grey;
+    margin-bottom: 1.6875rem;
+    background-image: url('../img/reviews/flower.png'); 
+    background-repeat: no-repeat; 
+    background-position: right top;
+    position: relative;
+    @include tablets {
+        width: 73%; 
+        margin-left: 6.4rem;  
+    }
+    @include phones {
+       width: 96%;
+       margin-left: 2%; 
+    }
+
+    &:after {
+        content: url('../img/reviews/ellips.png');
+        left: 45%;
+        position: absolute;
+        @include tablets {
+            left: 40%;
+        }
+    }
+}
+
+.reviews__block {
+    display: flex;
+    width: 44.1875rem;
+    margin: 3.1875rem 11.75rem 2.125rem 2.8125rem;
+    @include tablets {
+        flex-direction: column; 
+        align-items: center;  
+    }
+    @include phones {
+        margin: 0;
+        margin-top: 3rem;   
+    }
+}
+
+.reviews__img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reviews__picture {
+    max-width: 15.875rem;
+    max-height: 15.875rem;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-right: 1.25rem;
+    @include tablets {
+        margin-bottom: 1.5rem; 
+        margin-right: 0;  
+    }
+    @include phones {
+        max-width: 10rem;
+        max-height: 10rem;   
+    }
+}
+
+.reviews__desk {
+    width: 27.0625rem;
+    display: block;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    color: $grey;
+    text-align: left;
+    @include tablets {
+        text-align: center;   
+    }
+}
+
+.reviews__about {
+    font-size: 30px;
+    color: $dark_grey;
+    font-weight: 500;
+    margin-bottom: 1.8125rem;
+    @include tablets {
+        margin-bottom: 1rem;   
+    }
+}
+
+.reviews__text-paragraph {
+    font-weight: 400;
+    margin-bottom: 1.4375rem;
+}
+
+.reviews__name {
+    font-weight: 500;
+}

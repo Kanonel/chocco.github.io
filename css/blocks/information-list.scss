@@ -1,0 +1,35 @@
+.information__list {
+    display: flex;
+    padding-bottom: 2.9375rem;
+}
+
+.information__item {
+    margin-right: 9%;
+    display: flex;
+}
+
+.information__item:last-child {
+    margin-right: 0;
+}
+
+.information__text-paragraph {
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.information__icon {
+    margin-right: 0.5625rem;
+    max-width: 3.125rem;
+    max-height: 2.625rem;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.pic {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}

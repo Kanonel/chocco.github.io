@@ -1,0 +1,165 @@
+.team {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: url('../img/team/blueberry.png');
+        bottom: 50%;
+        right: 0;
+        position: absolute;
+        @include tablets {
+            bottom: 70%;
+        }
+        @include phones {
+           display: none; 
+        }
+    }
+
+    &:after {
+        content: url('../img/team/raspberry.png');
+        top: 90%;
+        left: 8%;
+        position: absolute;
+        @include tablets {
+            top: 93%;
+        }
+        @include phones {
+            display: none;   
+        }
+    }
+}
+
+.team__container {
+    padding-top: 4.5625rem;
+    @include tablets {
+        padding-top: 1rem;   
+    }
+}
+
+.accordeon-team {
+    @include tablets {
+        padding: 0 12%;   
+    }
+}
+
+.accordeon-team__list {
+    display: flex;
+    @include tablets {
+        flex-wrap: wrap;   
+    }
+}
+  
+.accordeon-team__item {
+    padding: 0 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    @include tablets {
+        padding: 0;
+        margin-bottom: 1rem;   
+    }
+    @include phones {
+        width: 25%;
+        flex-wrap: wrap;
+        margin-right: 44%;
+        margin-left: -19%;
+        padding: 0 1rem;       
+    }
+
+    &--active,
+    &:hover {
+        .accordeon-team__content {
+            max-height: 5.75rem;
+            @include tablets {
+                max-height: 7.75rem;
+            }
+        } 
+        .accordeon-team__btn--name {
+            &:after {
+                content: url('../img/team/up.png');
+                margin-left: 2%;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.accordeon-team__img--pic {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.team__tit {
+    margin-bottom: 3.625rem;
+    @include tablets {
+        margin-bottom: 1rem;   
+    }
+}
+
+.accordeon-team__content {
+    overflow: hidden;
+    max-height: 0;
+    width: 17.1875rem;
+    transition: max-height .3s;
+    @include tablets {
+        padding: 0 7%;   
+    }
+}
+
+.accordeon-team__people {
+    width: 13.75rem;
+    @include phones {
+        width: 9.75rem;       
+    }
+}
+
+.accordeon-team__img {
+    width: 10.75rem;
+    height: 13rem;
+    margin-bottom: 1.625rem;
+    @include tablets {
+        margin-bottom: 1rem;   
+    }
+}
+
+.accordeon-team__btn {
+    text-decoration: none;
+}
+
+.accordeon-team__btn--name {
+    font-family: "Alegreya Sans";
+    font-size: 21px;
+    font-weight: 500;
+    color: $dark_grey;
+    margin-bottom: 0.8125rem;
+
+    &:after {
+        content: url('../img/team/down.png');
+        margin-left: 2%;
+        position: absolute;
+    }
+}
+
+.profession {
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: $otherblack;
+    margin-bottom: 0.75rem;
+    @include tablets {
+        margin-bottom: 0.1rem;   
+    }
+}
+
+.accordeon-team__text {
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 300;
+    color: $grey;
+}
