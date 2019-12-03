@@ -10,4 +10,8 @@
     text-transform: uppercase;
     text-decoration: none;
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.2);
+    @include tablets {
+        padding: 1rem 2.125rem;
+        box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+    }
 }

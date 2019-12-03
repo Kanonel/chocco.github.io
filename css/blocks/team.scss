@@ -10,7 +10,7 @@
         right: 0;
         position: absolute;
         @include tablets {
-            bottom: 70%;
+            display: none;
         }
         @include phones {
            display: none; 
@@ -38,16 +38,11 @@
     }
 }
 
-.accordeon-team {
-    @include tablets {
-        padding: 0 12%;   
-    }
-}
-
 .accordeon-team__list {
     display: flex;
     @include tablets {
-        flex-wrap: wrap;   
+        flex-wrap: wrap; 
+        justify-content: center;  
     }
 }
   
@@ -63,11 +58,7 @@
         margin-bottom: 1rem;   
     }
     @include phones {
-        width: 25%;
-        flex-wrap: wrap;
-        margin-right: 44%;
-        margin-left: -19%;
-        padding: 0 1rem;       
+        width: 50%;      
     }
 
     &--active,
@@ -89,7 +80,6 @@
 }
 
 .accordeon-team__img--pic {
-    display: block;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
@@ -112,19 +102,14 @@
     }
 }
 
-.accordeon-team__people {
-    width: 13.75rem;
-    @include phones {
-        width: 9.75rem;       
-    }
-}
-
 .accordeon-team__img {
     width: 10.75rem;
     height: 13rem;
     margin-bottom: 1.625rem;
     @include tablets {
-        margin-bottom: 1rem;   
+        margin-bottom: 1rem;
+        width: 11rem;
+        height: 14rem;   
     }
 }
 
@@ -144,16 +129,21 @@
         margin-left: 2%;
         position: absolute;
     }
+    @include tablets {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
 }
 
 .profession {
     font-family: "Alegreya Sans";
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: $otherblack;
     margin-bottom: 0.75rem;
     @include tablets {
-        margin-bottom: 0.1rem;   
+        margin-bottom: 0rem;   
+        font-size: 17px;
     }
 }
 
@@ -162,4 +152,7 @@
     font-size: 18px;
     font-weight: 300;
     color: $grey;
+    @include tablets {
+        font-size: 16px;
+    }
 }

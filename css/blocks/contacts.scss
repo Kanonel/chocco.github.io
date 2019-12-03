@@ -16,6 +16,9 @@
     &--footer {
         color: $ocean;
         margin-left: 3%;
+        @include phones {
+            margin-left: 0;
+        }
     }
 
 }
@@ -36,6 +39,9 @@
             left: -3%;
             top: -5%;
             position: absolute;
+            @include phones {
+                left: 25%;
+            }
         }
     }
 }
