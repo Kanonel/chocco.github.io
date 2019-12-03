@@ -49,6 +49,9 @@ footer {
 .socials {
     width: 50%;
     padding-left: 31%;
+    @include tablets {
+        padding-left: 26%;
+    }
     @include phones {
         width: 100%;
         padding-left: 0;

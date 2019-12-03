@@ -48,6 +48,7 @@
     }
     @include phones {
        width: 98%; 
+       margin-bottom: 0.5rem;
     }
 
     &:after {
@@ -89,8 +90,8 @@
     @include tablets {
         margin-bottom: 0.5rem; 
         margin-right: 0;
-        width: 12.5rem;
-        height: 12.5rem;  
+        width: 11rem;
+        height: 11rem;  
     }
     @include phones {
         max-width: 10rem;

@@ -111,6 +111,10 @@
         width: 11rem;
         height: 14rem;   
     }
+    @include phones {
+        width: 9rem;
+        height: 12rem;
+    }
 }
 
 .accordeon-team__btn {
