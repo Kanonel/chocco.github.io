@@ -965,7 +965,8 @@ footer {
   @media screen and (max-width: 768px) {
     .accordeon-team__item {
       padding: 0;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      width: 34%; } }
   @media screen and (max-width: 480px) {
     .accordeon-team__item {
       width: 50%; } }
@@ -1010,7 +1011,7 @@ footer {
     .accordeon-team__img {
       margin-bottom: 1rem;
       width: 11rem;
-      height: 14rem; } }
+      height: 12.5rem; } }
   @media screen and (max-width: 480px) {
     .accordeon-team__img {
       width: 9rem;
