@@ -14,7 +14,7 @@
     background-position: right 2.25rem;
     align-items: center;
     @include tablets {
-        padding-top: 2rem;
+        padding-top: 1rem;
 
     }
     @include phones {
@@ -25,7 +25,7 @@
 .reviews__tit {
     margin-bottom: 2.75rem;
     @include tablets {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
     @include phones {
         margin-bottom: 1rem;   

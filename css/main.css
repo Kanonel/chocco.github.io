@@ -1164,7 +1164,7 @@ footer {
   align-items: center; }
   @media screen and (max-width: 768px) {
     .reviews__container {
-      padding-top: 2rem; } }
+      padding-top: 1rem; } }
   @media screen and (max-width: 480px) {
     .reviews__container {
       padding-top: 2rem; } }
@@ -1173,7 +1173,7 @@ footer {
   margin-bottom: 2.75rem; }
   @media screen and (max-width: 768px) {
     .reviews__tit {
-      margin-bottom: 1rem; } }
+      margin-bottom: 0.5rem; } }
   @media screen and (max-width: 480px) {
     .reviews__tit {
       margin-bottom: 1rem; } }
