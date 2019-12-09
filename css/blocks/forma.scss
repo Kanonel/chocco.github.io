@@ -24,7 +24,9 @@
 }
 
 .forma__container {
-    padding-top: 5.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;  
     &:before {
         content: url('../img/forma/blackberry.png');
@@ -70,26 +72,16 @@
     }
 }
 
-.container__form {
-    padding: 0 5rem 5.625rem;  
-    @include tablets {
-        padding: 0;
-    } 
-    @include phones {
-        padding: 0;   
-    } 
-}
-
 .form {
     display: flex;
-    width: 58.75rem;  
+    max-width: 58.75rem;  
     text-align: left;
+    margin: 0 auto;
     @include tablets {
-        width: 100%;
-        padding: 0 7rem;
+        width: 63%;
     }
     @include phones {
-        padding: 0;   
+        width: 100%;   
     }
 }
 

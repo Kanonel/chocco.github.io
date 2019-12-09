@@ -29,7 +29,9 @@
 }
 
 .why-chocco__container {
-    padding-top: 7.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include tablets {
         padding-top: 1.5rem;   
     }
