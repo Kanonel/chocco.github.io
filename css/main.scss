@@ -10,6 +10,9 @@ $otherblack: #281e1e;
 $fonforma: #cfdeda;
 $border: #dde3bd;
 $icon: #b0f7ff;
+$background_bar: #f8faf9;
+$azure: #61c4d9;
+$azure-dark: #00accf;
 
 // resolutions
 $phones: 480px;
@@ -35,6 +38,7 @@ $tablets: 768px;
 @import "./blocks/btn.scss";
 @import "./blocks/information-list.scss";
 @import "./blocks/why-chocco.scss";
+@import "./blocks/bar-chocco.scss";
 @import "./blocks/team.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/reviews.scss";
@@ -43,3 +47,4 @@ $tablets: 768px;
 @import "./blocks/map.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/fixed-menu.scss";
+@import "./blocks/hamburgers-menu.scss";
