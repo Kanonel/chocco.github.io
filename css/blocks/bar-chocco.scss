@@ -117,7 +117,7 @@
     justify-content: center;
 
     @include tablets {
-        width: 63%;
+        width: 52%;
         height: 50%;
         margin-right: 0;
         margin-bottom: 1.5rem;
@@ -181,11 +181,11 @@
 
     @include tablets {
         position: absolute;
-        right: -4rem;
-        top: -27.5rem;
+        right: -1rem;
+        top: -20.5rem;
     }
     @include phones {
-        right: 1rem;
+        right: -0.5rem;
         top: -22.5rem;
     }
 }

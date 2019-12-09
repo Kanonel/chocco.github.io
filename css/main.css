@@ -1051,7 +1051,7 @@ footer {
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .slider__img {
-      width: 63%;
+      width: 52%;
       height: 50%;
       margin-right: 0;
       margin-bottom: 1.5rem; } }
@@ -1124,11 +1124,11 @@ footer {
   @media screen and (max-width: 768px) {
     .structure {
       position: absolute;
-      right: -4rem;
-      top: -27.5rem; } }
+      right: -1rem;
+      top: -20.5rem; } }
   @media screen and (max-width: 480px) {
     .structure {
-      right: 1rem;
+      right: -0.5rem;
       top: -22.5rem; } }
 
 .structure__img {
