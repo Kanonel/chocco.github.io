@@ -948,7 +948,7 @@ footer {
         right: 21%; } }
     @media screen and (max-width: 480px) {
       .bar-chocco__container:after {
-        top: 35%;
+        top: 32%;
         right: 9%; } }
 
 .btn__icon {
@@ -1129,7 +1129,7 @@ footer {
   @media screen and (max-width: 480px) {
     .structure {
       right: -0.5rem;
-      top: -22.5rem; } }
+      top: -17rem; } }
 
 .structure__img {
   width: 3.1875rem;
