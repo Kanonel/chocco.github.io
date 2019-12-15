@@ -146,20 +146,20 @@
             <div class="container bar-chocco__container">
                 <div class="slider">
                     <div class="slider-arrow slider-arrow__prev">
-                        <a href="#" class="prev__btn">
+                        <a href="#" class="prev__btn" id="prev" onclick="minusSlide()">
                             <svg class="btn__icon">
                                 <use xlink:href="./img/sprite.svg#prev"></use>
                             </svg>
                         </a>
                     </div>
                     <div class="slider-arrow slider-arrow__next">
-                        <a href="#" class="next__btn">
+                        <a href="#" class="next__btn" id="next" onclick="plusSlide()">
                             <svg class="btn__icon">
                                 <use xlink:href="./img/sprite.svg#next"></use>
                             </svg>
                         </a>
                     </div>
-                    <ul class="slider__list">
+                    <ul class="slider__list" id="slider__list">
                         <li class="slider__item">
                             <div class="slider__col slider__col--img">
                                 <div class="slider__img">
@@ -253,6 +253,98 @@
                                 </div>
                             </div>
                         </li>
+                        <li class="slider__item">
+                            <div class="slider__col slider__col--img">
+                                <div class="slider__img">
+                                    <img src="./img/bar-chocco/chocco2.png" alt="Картинка батончика" class="pic">
+                                </div>
+                            </div>
+                            <div class="slider__col">
+                                <a href="#" class="structure">
+                                    <div class="structure__img">
+                                        <svg class="structure__icon">
+                                            <use xlink:href="./img/sprite.svg#chocolate-bar"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="structure__title"><em>состав</em></div>
+                                    <div class="structure__drop">
+                                        <ul class="structure__list">
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#oat"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Овёс</div>
+                                                <div class="weight">25 г</div>
+                                            </li>
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#seaweed"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Мор. водоросли</div>
+                                                <div class="weight">15 г</div>
+                                            </li>
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#almond2"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Миндаль</div>
+                                                <div class="weight">20 г</div>
+                                            </li>
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#washing-powder"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Сухое молоко</div>
+                                                <div class="weight">10 г</div>
+                                            </li>
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#seeds"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Тыкв. семечки</div>
+                                                <div class="weight">20 г</div>
+                                            </li>
+                                            <li class="structure__item">
+                                                <div class="structure__badge">
+                                                    <svg class="struc__icon">
+                                                        <use xlink:href="./img/sprite.svg#beans"></use>
+                                                    </svg></div>
+                                                <div class="structure__text">Какао бобы</div>
+                                                <div class="weight">4 г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <div class="slider__title">Батончик “Гранола виноград”</div>
+                                <div class="slider__description">
+                                    <p class="slider__paragraph">
+                                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
+                                        сухое молоко, заменитель сахара и какао бобы.
+                                    </p>
+                                    <div class="slider__calories-weight">
+                                        <div class="slider__calories">
+                                            <div class="calories__title">Калорийность</div>
+                                            <div class="calories__number">110 ккал</div>
+                                        </div>
+                                        <div class="slider__weight">
+                                            <div class="weight__title">Вес</div>
+                                            <div class="weight__number">95 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__order">
+                                        <div class="slider__price">140 ₽</div>
+                                        <div class="form__col form__col--button">
+                                            <button type="submit" class="btn">заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -269,11 +361,11 @@
                                 <div class="accordeon-team__img">
                                     <img src="./img/team/boris.png" alt="Фото Бориса" class="accordeon-team__img--pic">
                                 </div>
-                                <a href="#" class="accordeon-team__btn">
-                                    <h4 class="accordeon-team__btn--name">Борис Федорович</h4>
+                                <a href="#" class="accordeon-team__btn" id="team-btn">
+                                    <h4 class="btn__name">Борис Федорович</h4>
                                 </a>
                             </div>
-                            <div class="accordeon-team__content">
+                            <div class="accordeon-team__content" id="team-content">
                                 <h5 class="profession">Главный технолог</h5>
                                 <p class="accordeon-team__text">
                                     Отвечает за вкусовые качества и калорийность.
@@ -285,11 +377,11 @@
                                 <div class="accordeon-team__img">
                                     <img src="./img/team/alla.png" alt="Фото Аллы" class="accordeon-team__img--pic">
                                 </div>
-                                <a href="#" class="accordeon-team__btn">
-                                    <h4 class="accordeon-team__btn--name">Алла Иванова</h4>
+                                <a href="#" class="accordeon-team__btn" id="team-btn">
+                                    <h4 class="btn__name">Алла Иванова</h4>
                                 </a>
                             </div>
-                            <div class="accordeon-team__content">
+                            <div class="accordeon-team__content" id="team-content">
                                 <h5 class="profession">Специалист по упаковке</h5>
                                 <p class="accordeon-team__text">
                                     Автор запоминающегося стиля наших батончиков.
@@ -302,11 +394,11 @@
                                     <img src="./img/team/kirill.png" alt="Фото Кирилла"
                                         class="accordeon-team__img--pic">
                                 </div>
-                                <a href="#" class="accordeon-team__btn">
-                                    <h4 class="accordeon-team__btn--name">Кирилл Матросов</h4>
+                                <a href="#" class="accordeon-team__btn" id="team-btn">
+                                    <h4 class="btn__name">Кирилл Матросов</h4>
                                 </a>
                             </div>
-                            <div class="accordeon-team__content">
+                            <div class="accordeon-team__content" id="team-content">
                                 <h5 class="profession">Оператор</h5>
                                 <p class="accordeon-team__text">
                                     С радостью поможет подобрать батончики и оформить заказ.
@@ -318,11 +410,11 @@
                                 <div class="accordeon-team__img">
                                     <img src="./img/team/mila.png" alt="Фото Милы" class="accordeon-team__img--pic">
                                 </div>
-                                <a href="#" class="accordeon-team__btn">
-                                    <h4 class="accordeon-team__btn--name">Мила Рыжкова</h4>
+                                <a href="#" class="accordeon-team__btn" id="team-btn">
+                                    <h4 class="btn__name">Мила Рыжкова</h4>
                                 </a>
                             </div>
-                            <div class="accordeon-team__content">
+                            <div class="accordeon-team__content" id="team-content">
                                 <h5 class="profession">PR, маркетинг</h5>
                                 <p class="accordeon-team__text">
                                     По всем вопросам сотрудничества и рекламы писать только Миле.
@@ -339,12 +431,12 @@
             </div>
             <div class="accordeon-menu">
                 <ul class="accordeon-menu__list">
-                    <li class="accordeon-menu__item">
-                        <a href="#" class="accordeon-menu__btn"
+                    <li class="accordeon-menu__item" id="accordeon-men__item">
+                        <a href="#" class="accordeon-menu__btn" id="accordeon-menu__btn"
                             style="background-image: url('./img/menu/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png')">
                             <h3 class="accordeon-menu__btn--text">Батончики с молоком</h3>
                         </a>
-                        <div class="accordeon-menu__content">
+                        <div class="accordeon-menu__content" id="content">
                             <p class="accordeon-menu__paragraph">
                                 Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и
                                 вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и
@@ -352,10 +444,13 @@
                                 попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать –
                                 никто. Надо бы, кстати, бабулю поздравить с днём Победы.
                             </p>
+                            <a href="#" class="accordeon-menu__close" id="menu-close">
+                                <img src="./img/Rounded_Rectangle_1.png" alt="" class="pic">
+                            </a>
                         </div>
                     </li>
-                    <li class="accordeon-menu__item">
-                        <a href="#" class="accordeon-menu__btn"
+                    <li class="accordeon-menu__item" id="accordeon-men__item">
+                        <a href="#" class="accordeon-menu__btn" id="accordeon-menu__btn"
                             style="background-image: url('./img/menu/Granola-Bars-with-calamondin.png')">
                             <h3 class="accordeon-menu__btn--text">С мёдом и фруктами</h3>
                         </a>
@@ -367,10 +462,13 @@
                                 конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.
                             </p>
+                            <a href="#" class="accordeon-menu__close" id="menu-close">
+                                <img src="./img/Rounded_Rectangle_1.png" alt="" class="pic">
+                            </a>
                         </div>
                     </li>
-                    <li class="accordeon-menu__item">
-                        <a href="#" class="accordeon-menu__btn"
+                    <li class="accordeon-menu__item" id="accordeon-men__item">
+                        <a href="#" class="accordeon-menu__btn" id="accordeon-menu__btn"
                             style="background-image: url('./img/menu/shutterstock_684121381.png')">
                             <h3 class="accordeon-menu__btn--text">Дикие ягоды</h3>
                         </a>
@@ -382,6 +480,9 @@
                                 конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы,
                                 кстати, бабулю поздравить с днём Победы.
                             </p>
+                            <a href="#" class="accordeon-menu__close" id="menu-close">
+                                <img src="./img/Rounded_Rectangle_1.png" alt="" class="pic">
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -433,20 +534,20 @@
                     <h2 class="section__title section__title--green">закажите доставку</h2>
                 </div>
                 <div class="container__form">
-                    <form class="form">
+                    <form class="form" id="myForm">
                         <div class="form__wrap">
                             <div class="form-right">
                                 <div class="form__row">
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Имя</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="name" type="text" class="input__elem">
                                         </label>
                                     </div>
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Телефон</div>
-                                            <input type="text" class="input__elem" placeholder="89022348912">
+                                            <input name="phone" type="text" class="input__elem" placeholder="89022348912">
                                         </label>
                                     </div>
                                 </div>
@@ -454,7 +555,7 @@
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Улица</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="street" type="text" class="input__elem">
                                         </label>
                                     </div>
                                 </div>
@@ -462,25 +563,25 @@
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Дом</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="home" type="text" class="input__elem">
                                         </label>
                                     </div>
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Корпус</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="part" type="text" class="input__elem">
                                         </label>
                                     </div>
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Квартира</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="appartament" type="text" class="input__elem">
                                         </label>
                                     </div>
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Этаж</div>
-                                            <input type="text" class="input__elem">
+                                            <input name="floor" type="text" class="input__elem">
                                         </label>
                                     </div>
                                 </div>
@@ -490,7 +591,7 @@
                                     <div class="form__col">
                                         <div class="textarea">
                                             <div class="textarea__text">Комментарий</div>
-                                            <input type="text" class="textarea__elem">
+                                            <input name="comment" type="text" class="textarea__elem">
                                         </div>
                                     </div>
                                 </div>
@@ -499,14 +600,14 @@
                                         <div class="radio-buttons radio-buttons--centr">
                                             <div class="radio-btn--centr">
                                                 <label class="radio-btn">
-                                                    <input name="radio" type="radio" class="radio-btn__elem">
+                                                    <input name="payment" type="radio" class="radio-btn__elem">
                                                     <div class="radio-btn__content">
                                                         <div class="radio-btn__button"></div>
                                                         <div class="radio-btn__text">Потребуется сдача</div>
                                                     </div>
                                                 </label>
                                                 <label class="radio-btn">
-                                                    <input name="radio" type="radio" class="radio-btn__elem">
+                                                    <input name="payment" type="radio" class="radio-btn__elem">
                                                     <div class="radio-btn__content">
                                                         <div class="radio-btn__button"></div>
                                                         <div class="radio-btn__text">Оплата по карте</div>
@@ -514,7 +615,7 @@
                                                 </label>
                                             </div>
                                             <label class="check-btn">
-                                                <input type="checkbox" name="check" class="check-btn__elem" checked>
+                                                <input type="checkbox" name="callback" class="check-btn__elem" checked>
                                                 <div class="check-btn__content">
                                                     <div class="check-btn__button"></div>
                                                     <div class="check-btn__text">Не перезванивать</div>
@@ -525,7 +626,7 @@
                                 </div>
                                 <div class="form__row form__row--sub">
                                     <div class="form__col form__col--button">
-                                        <button type="submit" class="btn">заказать</button>
+                                        <button id="button-send" type="submit" class="btn">заказать</button>
                                     </div>
                                     <div class="form__col form__col--butn">
                                         <button type="reset" class="btn-reset">Очистить</button>
@@ -661,6 +762,74 @@
                     event.preventDefault();
                     var hamburgermenu = document.getElementById('menu-hamburger');
                     hamburgermenu.classList.remove('--active');
+                });
+            })();
+        </script>
+
+        <script>
+            /* Индекс слайда по умолчанию */
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+            function plusSlide() {
+                showSlides(slideIndex += 1);
+                event.preventDefault();
+            }
+
+            /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+            function minusSlide() {
+                showSlides(slideIndex -= 1);
+                event.preventDefault();
+            }
+
+            /* Устанавливает текущий слайд */
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+                event.preventDefault();
+            }
+
+            /* Основная функция слайдера */
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slider__item");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "flex";
+            }
+        </script>
+
+        <script type="text/javascript">
+            (function () {
+                var a = document.getElementByClassName('accordeon-menu__btn');
+                a.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var accordeon = document.getElementByClassName('accordeon-menu__item');
+                    accordeon.classList.toggle('--active');
+                });
+                var a = document.getElementById('menu-close');
+                a.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var accordeon = document.getElementByClassName('accordeon-menu__item');
+                    accordeon.classList.remove('--active');
+                });
+            })();
+        </script>
+
+        <script type="text/javascript">
+            (function () {
+                var a = document.getElementById('team-btn');
+                a.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var div = document.getElementById('team-content');
+                    div.classList.toggle('--active');
                 });
             })();
         </script>

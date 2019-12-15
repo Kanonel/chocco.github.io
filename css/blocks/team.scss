@@ -63,7 +63,7 @@
     @include phones {
         width: 50%;      
     }
-
+    /*
     &--active,
     &:hover {
         .accordeon-team__content {
@@ -79,7 +79,20 @@
                 position: absolute;
             }
         }
+    }*/
+}
+
+.accordeon-team__content.--active {
+    max-height: 5.75rem;
+    @include tablets {
+        max-height: 7.75rem;
     }
+}
+
+.btn__name.--active:after {
+    content: url('../img/team/up.png');
+    margin-left: 2%;
+    position: absolute;
 }
 
 .accordeon-team__img--pic {
@@ -124,22 +137,28 @@
     text-decoration: none;
 }
 
-.accordeon-team__btn--name {
+.btn__name {
     font-family: "Alegreya Sans";
     font-size: 21px;
     font-weight: 500;
     color: $dark_grey;
     margin-bottom: 0.8125rem;
 
-    &:after {
+    /*&:after {
         content: url('../img/team/down.png');
         margin-left: 2%;
         position: absolute;
-    }
+    }*/
     @include tablets {
         margin-bottom: 0;
         font-size: 18px;
     }
+}
+
+.btn__name:after {
+    content: url('../img/team/down.png');
+    margin-left: 2%;
+    position: absolute;
 }
 
 .profession {

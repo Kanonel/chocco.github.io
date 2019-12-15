@@ -50,12 +50,14 @@
     top: 50%;
     width: 1.8125rem;
     height: 2.75rem;
+    z-index: 10;
 
     @include tablets {
         top: 15%;
     }
 
     &__prev {
+        transition: 0.6s ease;
         left: -1.25rem;
         @include tablets {
             left: 9rem;
@@ -65,6 +67,7 @@
         }
     }
     &__next {
+        transition: 0.6s ease;
         right: -1.25rem;
         @include tablets {
             right: 9rem;
@@ -87,6 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     @include tablets {
         flex-direction: column;
@@ -95,6 +99,8 @@
 
 .slider__item {
     display: flex;
+    will-change: right;
+    transition: right 0.3s;
     @include tablets {
         flex-direction: column;
         align-items: center;
@@ -335,3 +341,29 @@
     line-height: 24px;
     color: $black;
 }
+
+.slider__item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}   
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+    
