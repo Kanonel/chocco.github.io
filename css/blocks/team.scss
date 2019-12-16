@@ -82,12 +82,12 @@
     }*/
 }
 
-.accordeon-team__content.--active {
+/*.teamcontent.active {
     max-height: 5.75rem;
     @include tablets {
         max-height: 7.75rem;
     }
-}
+}*/
 
 .btn__name.--active:after {
     content: url('../img/team/up.png');
@@ -108,7 +108,7 @@
     }
 }
 
-.accordeon-team__content {
+.teamcontent {
     overflow: hidden;
     max-height: 0;
     width: 17.1875rem;
@@ -181,4 +181,10 @@
     @include tablets {
         font-size: 16px;
     }
+}
+
+.accordeon-team__people {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

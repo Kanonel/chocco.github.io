@@ -13,6 +13,7 @@ $icon: #b0f7ff;
 $background_bar: #f8faf9;
 $azure: #61c4d9;
 $azure-dark: #00accf;
+$ddark_grey: #2f3234;
 
 // resolutions
 $phones: 480px;
@@ -48,3 +49,4 @@ $tablets: 768px;
 @import "./blocks/footer.scss";
 @import "./blocks/fixed-menu.scss";
 @import "./blocks/hamburgers-menu.scss";
+@import "./blocks/popup.scss";

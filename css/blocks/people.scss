@@ -7,20 +7,22 @@
 
 .people__item {
     margin-right: 0.6875rem;
-}
-
-.people__link {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    &--active,
+
+    /*&--active,
     &:hover {
     background-color: $ocean;
-    }
+    }*/
+}
+
+.active,
+.people__item:hover {
+    background-color: $ocean;
 }
 
 .people__img {
@@ -37,4 +39,29 @@
     max-height: 4.25rem;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.reviews__block {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}   
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }

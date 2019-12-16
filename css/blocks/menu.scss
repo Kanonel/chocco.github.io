@@ -33,14 +33,14 @@
 .accordeon-menu__item {
     display: flex;
     
-    &--active {
+    /*&--active {
         .accordeon-menu__content {
             max-width: 33.125rem;
             width: 100%;
             height: 100%;
             display: flex;
         }      
-    }
+    }*/
 }
 /*
 .accordeon-menu__item.--active .accordeon-men__content {
@@ -50,12 +50,16 @@
     display: flex;
 }*/
 
-.accordeon-menu__content {
+.menucontent {
     display: flex;
     overflow: hidden;
     max-width: 0;
     transition: max-width .3s;
     background-color: rgba($color: #000000, $alpha: .6);
+}
+
+.menucontent.openmenu {
+    max-width: 623px;
 }
 
 .accordeon-menu__close {
