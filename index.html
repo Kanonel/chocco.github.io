@@ -732,27 +732,6 @@
                 <a class="popup__close" href="#!">Закрыть</a>
             </div>
         </div>
-        <script>
-            const openButton = document.querySelector("#button-send");
-            const overlayElement = document.querySelector("#success");
-
-            openButton.addEventListener("click", function (e) {
-                e.preventDefault();
-                overlayElement.style.display = "flex";
-            });
-
-            const closeElement = overlayElement.querySelector(".popup__close");
-            closeElement.addEventListener("click", function (e) {
-                e.preventDefault();
-                overlayElement.style.display = "none";
-            });
-
-            overlayElement.addEventListener("click", function (e) {
-                if (e.target === overlayElement) {
-                    closeElement.click();
-                }
-            });
-        </script>
 
         <div class="fixed_menu">
             <ul class="fixed-menu">
