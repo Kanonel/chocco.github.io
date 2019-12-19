@@ -82,17 +82,20 @@
     }*/
 }
 
-/*.teamcontent.active {
+.accordeon-team__item.open .teamcontent {
     max-height: 5.75rem;
     @include tablets {
         max-height: 7.75rem;
     }
-}*/
+}
 
-.btn__name.--active:after {
-    content: url('../img/team/up.png');
+.accordeon-team__item.open .btn__name:after {
+    content: url('../img/team/down.png');
     margin-left: 2%;
+    top: 13.7rem;
     position: absolute;
+    display: inline-block;
+    transform: rotate(180deg);
 }
 
 .accordeon-team__img--pic {

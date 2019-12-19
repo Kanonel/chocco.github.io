@@ -616,7 +616,7 @@
                                     <div class="form__col">
                                         <label class="input">
                                             <div class="input__text">Этаж</div>
-                                            <input name="floor" type="text" class="input__elem"required>
+                                            <input name="floor" type="text" class="input__elem" required>
                                         </label>
                                         <div class="error"></div>
                                     </div>
@@ -800,26 +800,12 @@
 
         <script src="./js/rewies.js"></script>
         <script src="./js/form.js"></script>
-        
-        <script>
-            var teambtn = document.getElementsByClassName("accordeon-team__btn");
-            var i;
 
-            for (i = 0; i < teambtn.length; i++) {
-                teambtn[i].addEventListener("click", function () {
-                    this.classList.toggle("open");
-                    var teamcontent = this.nextElementSibling;
-                    if (teamcontent.style.maxHeight) {
-                        teamcontent.style.maxHeight = null;
-                    } else {
-                        teamcontent.style.maxHeight = teamcontent.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
+        <script src="./js/team.js"></script>
+        <script src="./js/menu.js"></script>
 
         <script>
-            var menubtn = document.getElementsByClassName("accordeon-menu__btn");
+            /*var menubtn = document.getElementsByClassName("accordeon-menu__btn");
             var i;
 
             for (i = 0; i < menubtn.length; i++) {
@@ -837,9 +823,9 @@
             close.addEventListener('click', function (event) {
                 event.preventDefault();
                 menubtn.classList.remove('open');
-            });
+            });*/
         </script>
 
-        
+
     </div>
 </body>
