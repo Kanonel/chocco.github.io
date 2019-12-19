@@ -145,6 +145,9 @@
     @include tablets {
         font-size: 2.5rem;
     }
+    @include phones {
+        margin-bottom: 0.1rem;
+    }
 }
 .why-chocco__text-paragraph {
     color: $grey;

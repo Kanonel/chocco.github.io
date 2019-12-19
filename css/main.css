@@ -873,6 +873,9 @@ footer {
   @media screen and (max-width: 768px) {
     .section__title--black {
       font-size: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .section__title--black {
+      margin-bottom: 0.1rem; } }
 
 .why-chocco__text-paragraph {
   color: #666666;
@@ -1657,14 +1660,9 @@ footer {
     .reviews__container {
       padding-top: 2rem; } }
 
-.reviews__tit {
-  margin-bottom: 2.75rem; }
-  @media screen and (max-width: 768px) {
-    .reviews__tit {
-      margin-bottom: 0.5rem; } }
-  @media screen and (max-width: 480px) {
-    .reviews__tit {
-      margin-bottom: 1rem; } }
+@media screen and (max-width: 768px) {
+  .reviews__tit {
+    margin-bottom: 0.5rem; } }
 
 .reviews__table {
   display: -webkit-box;
@@ -1681,11 +1679,11 @@ footer {
   @media screen and (max-width: 768px) {
     .reviews__table {
       width: 28.75rem;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-bottom: 0.1rem; } }
   @media screen and (max-width: 480px) {
     .reviews__table {
-      width: 98%;
-      margin-bottom: 0.5rem; } }
+      width: 98%; } }
   .reviews__table:after {
     content: url("../img/reviews/ellips.png");
     left: 41.5%;
@@ -1714,7 +1712,7 @@ footer {
     .reviews__block {
       margin: 0;
       margin-top: 3rem;
-      height: 31rem; } }
+      height: 28rem; } }
 
 .reviews__img {
   display: block;
@@ -1739,8 +1737,8 @@ footer {
       height: 11rem; } }
   @media screen and (max-width: 480px) {
     .reviews__picture {
-      max-width: 10rem;
-      max-height: 10rem; } }
+      max-width: 8rem;
+      max-height: 8rem; } }
 
 .reviews__desk {
   width: 27.0625rem;
@@ -1763,6 +1761,9 @@ footer {
     .reviews__about {
       margin-bottom: 0.5rem;
       font-size: 28px; } }
+  @media screen and (max-width: 480px) {
+    .reviews__about {
+      margin-bottom: 0.1rem; } }
 
 .reviews__text-paragraph {
   font-weight: 400;
@@ -1786,8 +1787,7 @@ footer {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 4.125rem; }
+  align-items: center; }
 
 .people__item {
   margin-right: 0.6875rem;
