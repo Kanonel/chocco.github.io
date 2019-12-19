@@ -12,7 +12,7 @@
  function showListSlides(n) {
      var i;
      var slider = document.getElementsByClassName("reviews__block");
-     var dots = document.getElementsByClassName("people__item");
+     var dots = document.getElementsByClassName("people__link");
      if (n > slider.length) {
          slideIndex = 1
      }

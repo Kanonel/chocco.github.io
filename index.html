@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=664f2747-842f-48cc-8f59-9da88e130ccf&lang=ru_RU"
+        type="text/javascript">
+        </script>
 </head>
 
 <body>
@@ -537,20 +540,19 @@
                     </div>
                 </div>
                 <ul class="people">
-                    <li class="people__item" onclick="openSlide(1)">
-                        <a href="#" class="people__link">
-                            <div class="people__img"><img src="./img/reviews/alena.png" alt="Аватар"
-                                    class="people__link--pic"></div>
+                    <li class="people__item">
+                        <a href="#" class="people__link" onclick="openSlide(1)">
+                            <img src="./img/reviews/alena.png" alt="Аватар" class="people__link--pic">
                         </a>
                     </li>
-                    <li class="people__item" onclick="openSlide(2)">
-                        <a href="#" class="people__link">
-                            <img src="./img/reviews/woman.png" alt="Аватар" class="people__link--pic">
+                    <li class="people__item">
+                        <a href="#" class="people__link" onclick="openSlide(2)">
+                            <img src="./img/reviews/maria.png" alt="Аватар" class="people__link--pic">
                         </a>
                     </li>
-                    <li class="people__item" onclick="openSlide(3)">
-                        <a href="#" class="people__link">
-                            <img src="./img/reviews/man.png" alt="Аватар" class="people__link--pic">
+                    <li class="people__item">
+                        <a href="#" class="people__link" onclick="openSlide(3)">
+                            <img src="./img/reviews/vadim.png" alt="Аватар" class="people__link--pic">
                         </a>
                     </li>
                 </ul>
@@ -675,8 +677,8 @@
                 </div>
             </div>
         </section>
-        <section class="section map">
-            <img src="./img/map/map.png" alt="Карта" class="map__img--pic">
+        <section class="section map" data-anchor="map">
+            <div class="map-my" id="mapmy" style="width: 100%; height: 100%"></div>
         </section>
         <footer class="footer">
             <div class="container footer__container">
@@ -804,28 +806,6 @@
         <script src="./js/team.js"></script>
         <script src="./js/menu.js"></script>
 
-        <script>
-            /*var menubtn = document.getElementsByClassName("accordeon-menu__btn");
-            var i;
-
-            for (i = 0; i < menubtn.length; i++) {
-                menubtn[i].addEventListener("click", function () {
-                    this.classList.toggle("open");
-                    var menucontent = this.nextElementSibling;
-                    if (menucontent.style.maxWidth) {
-                        menucontent.style.maxWidth = null;
-                    } else {
-                        menucontent.style.maxWidth = menucontent.scrollWidth + "px";
-                    }
-                });
-            }
-            var close = document.getElementById('menu-close');
-            close.addEventListener('click', function (event) {
-                event.preventDefault();
-                menubtn.classList.remove('open');
-            });*/
-        </script>
-
-
+        <script src="./js/map.js"></script>
     </div>
 </body>
