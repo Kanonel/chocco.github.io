@@ -92,10 +92,18 @@
 .accordeon-team__item.open .btn__name:after {
     content: url('../img/team/down.png');
     margin-left: 2%;
-    top: 13.7rem;
+    top: 14.9rem;
     position: absolute;
     display: inline-block;
     transform: rotate(180deg);
+
+    @include tablets {
+        top: 13.7rem;
+    }
+
+    @include phones {
+        top: 13rem;
+    }
 }
 
 .accordeon-team__img--pic {
