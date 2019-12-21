@@ -338,8 +338,16 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden; }
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s; }
 
 h1,
 h2,
@@ -967,7 +975,10 @@ footer {
   z-index: 10; }
   @media screen and (max-width: 768px) {
     .slider-arrow {
-      top: 15%; } }
+      top: 25%; } }
+  @media screen and (max-width: 480px) {
+    .slider-arrow {
+      top: 20%; } }
   .slider-arrow__prev {
     -webkit-transition: 0.6s ease;
     -o-transition: 0.6s ease;
@@ -987,39 +998,44 @@ footer {
 
 .slider {
   width: 100%;
-  height: 29.75rem;
   position: relative; }
 
-.slider,
-.slider__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative; }
+@media screen and (max-width: 768px) {
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+.slider__content {
+  position: relative;
+  height: 35rem;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
-    .slider,
-    .slider__list {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
+    .slider__content {
+      height: 41.9375rem; } }
+
+.slider__list {
+  white-space: nowrap;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .slider__item {
+  display: inline-block;
+  height: 100%;
+  white-space: normal;
+  width: 100%; }
+
+.slider__item--content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  will-change: right;
-  -webkit-transition: right 0.3s;
-  -o-transition: right 0.3s;
-  transition: right 0.3s; }
+  position: relative; }
   @media screen and (max-width: 768px) {
-    .slider__item {
+    .slider__item--content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1125,7 +1141,8 @@ footer {
   flex-direction: column;
   margin-bottom: 2.3125rem;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
   .structure:hover {
     background-color: #00accf; }
     .structure:hover .structure__drop {
@@ -1235,7 +1252,7 @@ footer {
 .structure__drop {
   position: absolute;
   top: 0;
-  left: -125rem;
+  left: -625rem;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   opacity: 0;
