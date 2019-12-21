@@ -2371,6 +2371,9 @@ footer {
   right: 2.875rem;
   z-index: 1; }
 
+.fixed-menu__item.active .fixed-menu__dot {
+  border-color: #fff; }
+
 .fixed-menu__dot {
   display: block;
   height: 1rem;
@@ -2379,8 +2382,6 @@ footer {
   border: 0.0625rem solid transparent;
   position: relative;
   margin-bottom: 0.9375rem; }
-  .fixed-menu__dot--active {
-    border-color: #fff; }
   .fixed-menu__dot:hover {
     border-color: #fff; }
   .fixed-menu__dot:before {
