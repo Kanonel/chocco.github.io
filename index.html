@@ -10,13 +10,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    
+
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section welcome active">
+            <section class="section welcome">
                 <div class="container welcome__cont">
                     <header class="header">
                         <div class="logo">CHO<br>CCO</div>
@@ -582,6 +582,33 @@
                     </ul>
                 </div>
             </section>
+            <section class="section how-working">
+                <div class="container how-working__container">
+                    <div class="how-working__tit">
+                        <h2 class="section__title section__title--black">как мы работаем</h2>
+                    </div>
+                    <div class="player">
+                        <div class="player__wrapper">
+                            <div id="yt-player"></div>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <button class="player__start"></button>
+                            <span class="player__duration player__duration-completed">0:00</span>
+                            <div class="player__playback" value='0' max='100'>
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <span class="player__duration player__duration-estimate">0:00</span>
+                            <div class="player__mute">
+                                <img src="./img/video/Volum_gray.png" alt="" class="volum">
+                            </div>
+                            <div class='player__volume' id='player__volume' value='100' max='100'>
+                                <button class="player__volume-button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section forma">
                 <div class="container forma__container">
                     <div class="forma__tit">
@@ -759,7 +786,7 @@
         <div class="fixed_menu">
             <ul class="fixed-menu">
                 <li class="fixed-menu__item">
-                    <a href="#" class="fixed-menu__dot"  data-scroll-to="0"></a>
+                    <a href="#" class="fixed-menu__dot" data-scroll-to="0"></a>
                 </li>
                 <li class="fixed-menu__item">
                     <a href="#" class="fixed-menu__dot" data-scroll-to="1"></a>
@@ -827,9 +854,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
         <script type="text/javascript" src="./js/slick.min.js"></script>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=664f2747-842f-48cc-8f59-9da88e130ccf&lang=ru_RU"
-        type="text/javascript">
-        </script>
+            type="text/javascript"></script>
         <script src="./js/slider-bar.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="./js/player.js"></script>
         <script src="./js/main.js"></script>
         <script src="./js/hamburger.js" type="text/javascript"></script>
         <!--<script src="./js/bar-slider.js"></script>-->
