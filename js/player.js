@@ -85,18 +85,18 @@ const onPlayerStateChange = event => {
     }
 };
 
-/*const VolumeMute = () => {
+const VolumeMute = () => {
     $(".player__mute").on("click", e => {
         e.preventDefault();
-        const btn = $(e.currentTarget);
+        const mute = $(e.currentTarget);
 
-        if (btn.hasClass("unMute")) {
+        if (mute.hasClass("unMute")) {
             player.unMuteVideo();
         } else {
             player.muteVideo();
         }
     })
-};*/
+};
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {

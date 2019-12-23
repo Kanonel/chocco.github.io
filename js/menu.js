@@ -1,18 +1,22 @@
 var menu = document.getElementsByClassName('accordeon-menu__item');
-for (i = 0; i < menu.length; i++) {
-    menu[i].onclick = function () {
-        for (u = 0; u < menu.length; u++) {
-            if (this != menu[u]) menu[u].classList.remove('open');
+var m;
+for (m = 0; m < menu.length; m++) {
+    menu[m].onclick = function () {
+        var k;
+        for (k = 0; k < menu.length; k++) {
+            if (this != menu[k]) menu[k].classList.remove('open');
         }
         this.classList.toggle('open')
     }
 }
 
 var btn = document.getElementsByClassName('accordeon-menu__list');
-for (i = 0; i < btn.length; i++) {
-    btn[i].onclick = function () {
-        for (u = 0; u < btn.length; u++) {
-            if (this != btn[u]) btn[u].classList.remove('open');
+var m;
+for (m = 0; m < btn.length; m++) {
+    btn[m].onclick = function () {
+        var k;
+        for (k = 0; k < btn.length; k++) {
+            if (this != btn[k]) btn[k].classList.remove('open');
         }
         this.classList.toggle('open')
     }

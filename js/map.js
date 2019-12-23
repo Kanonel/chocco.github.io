@@ -16,6 +16,7 @@ function init() {
     }, {
         searchControlProvider: 'yandex#search'
     }),
+
     // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
@@ -50,6 +51,8 @@ function init() {
         // её "ножки" (точки привязки).
         iconImageOffset: [-24, -40]
     });
+
+    myMap.behaviors.disable('scrollZoom');
 
 myMap.geoObjects
     .add(myPlacemark)
